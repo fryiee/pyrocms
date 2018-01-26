@@ -1,5 +1,6 @@
 <?php namespace Tests;
 
+use Laravel\Dusk\Chrome\SupportsChrome;
 use Laravel\Dusk\TestCase;
 use Facebook\WebDriver\Chrome\ChromeOptions;
 use Facebook\WebDriver\Remote\RemoteWebDriver;
@@ -7,7 +8,7 @@ use Facebook\WebDriver\Remote\DesiredCapabilities;
 
 abstract class DuskTestCase extends TestCase
 {
-    use CreatesApplication;
+    use CreatesApplication, SupportsChrome;
 
     /**
      * Prepare for Dusk test execution.
@@ -34,7 +35,7 @@ abstract class DuskTestCase extends TestCase
         ]);
 
         return RemoteWebDriver::create(
-            'http://workbench.dev:9515', DesiredCapabilities::chrome()->setCapability(
+            'http://localhost:9515', DesiredCapabilities::chrome()->setCapability(
                 ChromeOptions::CAPABILITY, $options
             )
         );
