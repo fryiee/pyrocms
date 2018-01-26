@@ -12,16 +12,16 @@
 
     <testsuites>
         <testsuite name="Streams">
-            <directory suffix="Test.php">./vendor/anomaly/streams-platform/</directory>
+            <directory suffix="BrowserTest.php">./vendor/anomaly/streams-platform/</directory>
         </testsuite>
         <testsuite name="Addons">
-            <directory suffix="Test.php">./addons/*/*/*/tests</directory>
+            <directory suffix="BrowserTest.php">./addons/*/*/*/tests</directory>
         </testsuite>
         <testsuite name="Core">
-            <directory suffix="Test.php">./core/*/*/tests</directory>
+            <directory suffix="BrowserTest.php">./core/*/*/tests</directory>
         </testsuite>
         <testsuite name="Application">
-            <directory suffix="Test.php">./tests</directory>
+            <directory suffix="Test.php">./tests/Browser</directory>
         </testsuite>
     </testsuites>
 
