@@ -82,6 +82,7 @@
         "redtally/memberships-module": "dev-develop",
         "redtally/credits-module": "dev-develop",
         "redtally/royalties-module": "dev-develop",
+        "redtally/scripts-module": "dev-develop",
         "redtally/payments-module": "dev-feature/extension-support",
         "redtally/eway_payments-extension": "dev-develop",
         "redtally/asdacs_admin-theme": "dev-develop",
